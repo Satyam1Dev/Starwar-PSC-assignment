@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAR WARS | SEARCH BAR</title>
+</head>
+<style>
+    body{
+        
+        background: url(data:image/jpeg;base64,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);
+
+        padding-top: 100px;
+    }
+    #display{
+        display: flex;
+        flex-flow: column;
+        justify-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    input{
+        width:501px;
+        height: 50px;
+        margin: auto;
+        background-color: #2d2f30;
+        border-bottom: none;
+        border-radius: 18px;
+        font-size: 17px;
+        border-color:#1d1d2d;
+        color:#f2f2f2;
+        border-radius: inset 0 0 5px grey;
+    }
+    /* input::after{
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    } */
+    button{
+        width: 100px;
+        border-radius: 90%;
+    }
+    #container{
+        width: 40.1%;
+        height: auto;
+        max-height: 200px;
+        background-color: #2d2f30;
+        border-radius: 10px;
+        border-top-width: 80%;
+        
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        overflow-y: scroll;
+        scroll-padding: 0;
+        /* scroll-behavior: hidden; */
+        margin: auto 20% 10% 30%;
+        /* border: 1px solid green; */
+    }
+    #container::-webkit-scrollbar{
+        /* display:none; */
+        width: 5px;
+        height: 4px;
+        background-color:grey;
+    }
+    #show_name{
+        margin-bottom: 10px;
+        display: flex;
+        background-color: inherit;
+        color: #f2f2f2;
+        font-weight: 400;
+        /* border: 1px solid grey; */
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+    a{
+        text-decoration: none;
+    }
+    #show_name > div {
+        height: min-content;
+        display: flex;
+        flex-flow: column;
+    }
+    #show_name >a div:hover{
+        color: gold;
+    }
+    div > p{
+        padding: 0;
+        margin: 0px;
+    }
+    #show_name div .birth{
+        font-size: 14px;
+        line-height: 16px;
+        color: rgb(186, 188, 190);
+        
+    }
+    #display div{
+        margin: auto;
+    }
+    #display div >img{
+        width: 150px;
+        height: 150px;
+    }
+</style>
+<body>
+    <div id="display">
+<div></div>
+<input oninput="Debounce(SearchFast,500)" type="text" id="search" >
+
+</div>
+<div id="container"></div>
+
+<a href=""></a>
+</body>
+</html>
+<script>
+
+
+async function searchData(Search){
+
+const url = `https://swapi.dev/api/people/?search=${Search}`
+console.log (Search)
+console.log(url)
+
+let res =await fetch (url)
+let star_data = await res.json();
+// console.log(res.json())
+return star_data
+// return (star_data.results)
+// apeendDiv(star_data.results)
+}
+
+
+
+async function SearchFast(){
+    let Search =document.getElementById("search").value;
+    let fastData = searchData(Search)
+    let res_fast = await fastData;
+    console.log(res_fast.results);
+    apeendDiv(res_fast.results)
+}
+
+
+
+
+
+function apeendDiv(data){
+    let container = document.getElementById("container")
+    container.innerHTML=null;
+    let input=document.querySelector("input");
+    input.style.borderBottomLeftRadius="0px";
+    input.style.borderBottomRightRadius="0px";
+    data.forEach(function(el){
+        let anchor = document.createElement("a")
+        anchor.setAttribute("href","name.html")
+        let outer_div=document.createElement("div")
+        outer_div.setAttribute("id","show_name")
+        
+        let div= document.createElement("div");
+        let name_p=document.createElement("h5")
+        name_p.setAttribute("id","catchName")
+          name_p.innerText= el.name;
+          name_p.addEventListener("click",function(){
+            console.log(this.innerText)
+            let S_name = this.innerText;
+            localStorage.setItem("name",S_name) //storing the name local storage
+        })
+        let birth_p = document.createElement("p");
+        birth_p.setAttribute("class","birth")
+          birth_p.innerText= el.birth_year;
+          div.append(name_p,birth_p)
+        let gen_div=document.createElement("div");
+          let gender=document.createElement("p");
+          gender.setAttribute("class","birth")
+          gender.innerText=el.gender;
+          gen_div.append(gender);
+        
+          outer_div.append(div,gen_div)
+            anchor.append(outer_div)
+         container.append(anchor);
+
+    })
+
+
+}
+
+
+let set;
+
+function Debounce(fun,delay){
+if(set){
+    clearTimeout(set);
+}
+    set =setTimeout(function(){
+        fun();
+    },delay)
+}
+
+
+
+
+
+
+</script>
+
+
+
+
